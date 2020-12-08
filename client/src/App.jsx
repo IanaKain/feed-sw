@@ -10,7 +10,7 @@ class App extends React.Component {
     posts: [],
   }
   componentDidMount() {
-    fetch('http://localhost:3000/posts')
+    fetch('https://feed-sw.herokuapp.com/posts')
       .then(res => res.json())
       .then(({data}) => {
         this.setState({posts: data})
