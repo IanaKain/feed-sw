@@ -25,7 +25,8 @@ class App extends React.Component {
       <Router history={this.props.history}>
         <React.Fragment>
           <Switch>
-            <Route exact path='/' component={() => this.state.posts.map((post) => (
+            <Route exact path='/' component={() => 'Main Page'}/>
+            <Route exact path='/posts' component={() => this.state.posts.map((post) => (
               <div key={post.title}>
                 <h3>{post.title}</h3>
                 <div>{post.content}</div>
