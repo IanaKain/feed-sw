@@ -1,5 +1,4 @@
 const path = require('path');
-
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -58,22 +57,14 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.API_ENDPOINT': JSON.stringify(process.env.API_ENDPOINT),
     }),
-    new CopyWebpackPlugin([
-      {
-        from: './src/',
-        to: './',
-        globOptions: {
-          ignore: ['**/*.styl', '**/*.js', '**/sass'],
-        },
-      },
-    ]),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
-      files: {
-        css: ['style.css'],
-        js: ['bundle.js'],
+      filename: './index.html',
+      minify: {
+        collapseWhitespace: true,
       },
       inject: 'body',
-    })
+    }),
+    // new CopyWebpackPlugin([{from: './src/', to: './', globOptions: {ignore: ['*.jsx', '*.js']}}]),
   ],
 };
