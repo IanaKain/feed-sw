@@ -65,6 +65,6 @@ module.exports = {
       },
       inject: 'body',
     }),
-    // new CopyWebpackPlugin([{from: './src/', to: './', globOptions: {ignore: ['*.jsx', '*.js']}}]),
+    new CopyWebpackPlugin([{from: './src/', to: './', globOptions: {ignore: ['*.jsx', '*.js']}}]),
   ],
 };
