@@ -13,7 +13,7 @@ const prodConfig = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: path.resolve(__dirname, 'build')
+    publicPath: '/'
   },
   bail: true,
   devtool: false,
