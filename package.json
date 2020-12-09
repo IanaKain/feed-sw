@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": false,
   "engines": {
-    "node": "12.x"
+    "node": "12.18.3"
   },
   "scripts": {
     "build": "cd client && npm run build",
