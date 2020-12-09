@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "start": "nodemon index.js",
+    "build": "cd client && npm run build",
+    "start": "npm run build && nodemon index.js",
     "lint": "npx eslint . --quiet --cache -- && echo \"Your code in \\033[;32m$npm_package_name\\033[0m is clear\"",
     "lint:fix": "npx eslint --ext=js --quiet --cache --fix ."
   },
