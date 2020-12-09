@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -65,6 +65,6 @@ module.exports = {
       },
       inject: 'body',
     }),
-    new CopyWebpackPlugin([{from: './src/', to: './', globOptions: {ignore: ['*.jsx', '*.js']}}]),
+    // new CopyWebpackPlugin([{from: './src/', to: './', globOptions: {ignore: ['*.jsx', '*.js']}}]),
   ],
 };
