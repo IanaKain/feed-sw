@@ -44,11 +44,11 @@ app.use(session({
   },
 }));
 
-app.use(routes);
 // send the user to index html page inspite of the url
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client/build/index.html'));
 });
+app.use(routes);
 app.use((req, res) => {
   res.status(404).send('Sorry, page not found');
 });
