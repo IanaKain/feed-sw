@@ -27,8 +27,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(express.json({type: ['application/json', 'text/plain']}));
-app.use(require('stylus').middleware(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'client/build')));
 
 // goes after cookieParser, when cookies are read and ready
 app.use(session({
@@ -45,10 +43,16 @@ app.use(session({
 }));
 
 app.use(routes);
-// send the user to index html page inspite of the url
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client/build/index.html'));
-});
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(require('stylus').middleware(path.join(__dirname, 'client/build')));
+  app.use(express.static(path.join(__dirname, 'client/build')));
+  // send the user to index html page inspite of the url
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client/build/index.html'));
+  });
+}
+
 app.use((req, res) => {
   res.status(404).send('Sorry, page not found');
 });
