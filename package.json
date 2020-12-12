@@ -28,6 +28,7 @@
     "express-fileupload": "^1.1.9",
     "express-promise-router": "^3.0.3",
     "express-session": "^1.17.1",
+    "file-type": "^16.0.1",
     "googleapis": "^52.1.0",
     "http": "0.0.1-security",
     "http-errors": "~1.6.3",
