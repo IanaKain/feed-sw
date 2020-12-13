@@ -12,8 +12,8 @@ const Post = (props) => {
             <h2 className="post-content-left__main-title">{props.title}</h2>
             <div className="post-content-left__main-subtitle">{props.subtitle}</div>
             <div className="post-content-left__main-content">{props.content}</div>
+            <div className="post-content-left__date">{props.date}</div>
           </div>
-          <div className="post-content-left__date">{props.date}</div>
         </div>
         <div className="post-content-right">
           <div className="post-content-right__image"
