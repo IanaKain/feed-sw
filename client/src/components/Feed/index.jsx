@@ -8,7 +8,7 @@ class Feed extends React.Component {
     posts: [],
   }
   componentDidMount() {
-    fetch('http://localhost:3000/api/posts')
+    fetch('https://feed-sw.herokuapp.com/api/posts')
       .then(res => res.json())
       .then(({data}) => {
         this.setState({posts: data})
