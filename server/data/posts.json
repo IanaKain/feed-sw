@@ -1,0 +1,42 @@
+[
+  {
+    "title": "10 Things to Master About Javascript Before You Call Yourself a Pro",
+    "subtitle": "",
+    "image": "js.jpg",
+    "content": "Javascript has changed a lot over the years and has become one of the most popular languages out there. It is mine and lots of developer's favorite/preferred coding language so here are 10 things you should definitely try to master first.",
+    "author": "Before Semicolon",
+    "date": "Oct 15"
+  },
+  {
+    "title": "What’s New In Create React App 4",
+    "subtitle": "What to expect from the release",
+    "image": "create-react-4.jpg",
+    "content": "Create-React-App allows us to scaffold new React applications. It’s an incredibly useful tool for building React applications. It keeps all of our dev dependencies like webpack, ESLint and babel inside of react-scripts. That means, that in order to update these dependencies, we need to wait for an update to Create-React-App. Lucky for us, that day is here.",
+    "author": "Malcolm Laing",
+    "date": "Oct 24"
+  },
+  {
+    "title": "How To Optimize React App For Production And Deploy It To Heroku",
+    "subtitle": "Understand what it takes to make your React application faster",
+    "image": "heroku.jpeg",
+    "content": "In this article we will see, how we can optimize the react app we created in the previous article",
+    "author": "Yogesh Chavan",
+    "date": "Dec 14, 2019"
+  },
+  {
+    "title": "Run Node.js + React + Webpack on Heroku",
+    "subtitle": "",
+    "image": "",
+    "content": "To develope a website, I decide to use React and Node.js. For convinient, I also use Webpack for debuging. In the production version of my website, I do not need Webpack at all, so Webpack dependencies are put in devDependencies in package.json. That is a starting of a nighmare for me…",
+    "author": "Angcar",
+    "date": "Dec 15, 2018"
+  },
+  {
+    "title": "7 Small Acts That Make You An Extraordinary Partner",
+    "subtitle": "Practice the golden rule of relationships",
+    "image": "love.jpg",
+    "content": "When my long-distance girlfriend dropped me off at the airport, I sensed it would be the last time we saw each other. We had been dating only five months and had depleted our vacation days, air miles, and cash.",
+    "author": "Barry Davret",
+    "date": "Nov 11"
+  }
+]
